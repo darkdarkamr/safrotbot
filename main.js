@@ -101,7 +101,7 @@ global.chatgpt.chain = lodash.chain(global.chatgpt.data);
 loadChatgptDB();
 
 global.creds = 'creds.json'
-global.authFile = 'ElsonyBotSession'
+global.authFile = 'safrotSession'
 global.authFileJB  = 'GataJadiBot'
 global.rutaBot = join(__dirname, authFile)
 global.rutaJadiBot = join(__dirname, authFileJB)
@@ -305,7 +305,7 @@ console.log(chalk.bold.greenBright(`✅ TODOS LOS SUB-BOTS SE HAN INICIADO CORRE
 }
 (async () => {
 global.conns = [];
-const mainBotAuthFile = 'ElsonyBotSession';
+const mainBotAuthFile = 'safrotSession';
 try {
 const mainBot = await connectionUpdate(mainBotAuthFile);
 global.conns.push(mainBot);
@@ -445,13 +445,13 @@ unlinkSync(filePath)})
 }
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./ElsonyBotSession")
+let directorio = readdirSync("./safrotSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./ElsonyBotSession/${files}`)
+unlinkSync(`./safrotSession/${files}`)
 })
 } 
 function purgeSessionSB() {
@@ -477,7 +477,7 @@ console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
 console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 function purgeOldFiles() {
-const directories = ['./ElsonyBotSession/', './GataJadiBot/']
+const directories = ['./safrotSession/', './GataJadiBot/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
