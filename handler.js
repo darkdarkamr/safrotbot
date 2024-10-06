@@ -1074,17 +1074,7 @@ jadibotmd: true,
 console.error(e)
 }
 
-const isROwner = [
-    conn.decodeJid(global.conn.user.id),
-    ...global.owner.map(owner => owner.number) // تأكد من استخدام الرقم الصحيح
-].map(v => {
-    if (typeof v === 'string') {
-        return v.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
-    } else {
-        console.error('Value is not a string:', v);
-        return ''; // أو يمكنك إرجاع قيمة افتراضية
-    }
-}).includes(m.sender);
+const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
