@@ -9,7 +9,7 @@ let handler = async(m, {
 		image: {
 			url: url
 		},
-		caption: `اتفضل يحب شوف دا✨Zenon↳🐢↲𝐁𝐎𝐓`
+		caption: `اتفضل يحب شوف دا-𝑭𝑶𝑿-𝑩𝑶𝑻`
 	}, {
 		quoted: m
 	});
