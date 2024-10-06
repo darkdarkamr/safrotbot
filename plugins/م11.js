@@ -24,13 +24,8 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let str = `⎔⋅• ━ ╼╃ ⌬〔﷽〕⌬ ╄╾ ━ •⋅⎔
-> Zenon↳🐢↲𝐁𝐎𝐓
-*⌬∙ • ──╾⊱﹝⚜️﹞⊰╼── • ∙⌬*
+let str = `*𖣘━━═════『🧚🏻‍♂️』════━━𖣘*
 > 〔قـسـم الـمـشـرفـيـن┊ ˼‏ 🧑‍💻˹ 〕
-*⌬∙ • ──╾⊱﹝⚜️﹞⊰╼── • ∙⌬*
-           *زينو🐢ــن بــ🤖ــوت*
-*⌬∙ • ──╾⊱﹝⚜️﹞⊰╼── • ∙⌬*
 > 🧑‍💻.طرد
 > 🧑‍💻.ترقية
 > 🧑‍💻.اعفاء
@@ -49,10 +44,8 @@ let str = `⎔⋅• ━ ╼╃ ⌬〔﷽〕⌬ ╄╾ ━ •⋅⎔
 > 🧑‍💻.المغادره
 > 🧑‍💻.جروب قفل او فتح
 > 🧑‍💻.لينك
-*⌬∙ • ──╾⊱﹝⚜️﹞⊰╼── • ∙⌬*
-*~⌬ تــ✍︎ــوقــيــع ↡~*🖋️
-*⌞⚜️┊Zenon ス M.E.Z┊⚜️⌝*
-*⌬∙ • ──╾⊱﹝⚜️﹞⊰╼── • ∙⌬*`.trim()
+*\`『 𝑭𝑶𝑿  ـ  𝑩𝑶𝑻 』\`*
+*𖣘━━═════『🧚🏻‍♂️』════━━𖣘*`.trim()
    const _0x3c7cab = _0x5a1d;
 
         function _0x5a1d(_0x1b92fa, _0x42ca62) {
@@ -66,7 +59,7 @@ let str = `⎔⋅• ━ ╼╃ ⌬〔﷽〕⌬ ╄╾ ━ •⋅⎔
         }
 
         function _0x42ca() {
-            const _0xe1e20e = ['2409147cMTtvV', '70SxKSwY', 'trim', '2708027tOnEUS', '831853GQAjyu', '6ZrUjVF', 'Zenon ⚡ 𝐂𝐎𝐃𝐈𝐍𝐆', '406070MLYaeB', 'https://chat.whatsapp.com/BrQVKh6Kt0X8LuMVWzW9XR', '4YbGMkZ', '840496IPJeXP', '322835aPaRGc', 'VIDEO', '3639410cLSfPv', 'sender', '9LtUyCF'];
+            const _0xe1e20e = ['2409147cMTtvV', '70SxKSwY', 'trim', '2708027tOnEUS', '831853GQAjyu', '6ZrUjVF', '𝑭𝑶𝑿-𝑩𝑶𝑻', '406070MLYaeB', 'https://chat.whatsapp.com/ClNQxTnKyFx6eZnJcvqsPY', '4YbGMkZ', '840496IPJeXP', '322835aPaRGc', 'VIDEO', '3639410cLSfPv', 'sender', '9LtUyCF'];
             _0x42ca = function () {
                 return _0xe1e20e;
             };
