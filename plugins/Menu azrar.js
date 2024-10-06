@@ -25,25 +25,20 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
   await conn.sendMessage(m.chat, { react: { text: '📂', key: m.key } })
-  const Elsony = 'https://telegra.ph/file/32329ff221ac7bbb7ab7b.jpg'
+  const Elsony = 'https://i.ibb.co/VDZSnxd/file.jpg'
   const mentionId = m.key.participant || m.key.remoteJid;
  
-conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `gataVidMenu`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
+conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `gataVidMenu`}, body: { text: `*𖣘━━══『🧚🏻‍♂️』═━━𖣘*
 *مــرحــبــا بــك/ي* @${mentionId.split('@')[0]}
-╗──────¤مــعلـ🛖ـومــاتــك
+╗──────¤معلوماتك
 > •مــســتــواك : ${level}
-> •بــريــمــيــوم : ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''}
+> •بــريــمــيــوم : ${user.premiumTime > 0 ? 'مميز' : (isPrems ? 'مميز' : 'عادي') || ''}
 > •رتــبــتــك : ${role}
-*• ──╾⊱﹝⚜️﹞⊰╼── •*
-╗───¤مــعلــومــات الــ🤖بــوت
-> •إســم الــبــوت: زينو🐢ن 
-> •الــمــطــور :Mohamed Elsony
+> •إســم الــبــوت: فوكس 
+> •الــمــطــور :♯ЅᗩFᏒOT꙯
 > •مــدة الــتــشــغــيل : ${uptime}
-*• ──╾⊱﹝⚜️﹞⊰╼── •*
-*~⌬ تــ✍︎ــوقــيــع ↡~*🖋️
-*⌞⚜️┊polite ス M.Z┊⚜️⌝*
-*• ──╾⊱﹝⚜️﹞⊰╼── •*
-> Copyright © 2024 Elsony`,subtitle: "Elsony",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: Elsony } }, { upload: conn.waUploadToServer }, {quoted: m}))},
+*𖣘━━══『🧚🏻‍♂️』═━━𖣘*
+> 𝑭𝑶𝑿  ـ  𝑩𝑶𝑻`,subtitle: "Elsony",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: Elsony } }, { upload: conn.waUploadToServer }, {quoted: m}))},
                     contextInfo: {
                         mentionedJid: [m.sender],
                         isForwarded: false,
@@ -53,11 +48,11 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                             {
                                 name: 'single_select',
                                 buttonParamsJson: JSON.stringify({
-                                    title: '⌈🛡╎الــقــوائـــم╎🛡⌋',
+                                    title: '⌈🧚🏻‍♂️╎الــقــوائـــم╎🧚🏻‍♂️⌋',
                                     sections: [
                                         {
-                                            title: 'مــرحـ🛡ـبــا بــك فـي مــ☑هــام زينون بـ🤖ـوت',
-                                            highlight_label: 'بعبص براحتك يابرو 🤖',
+                                            title: '*\`『 اوامر بوت فوكس』\`*',
+                                            highlight_label: '🧚🏻‍♂️',
                                             rows: [
                                                 {
                                                     header: 'الــقـ👑ـســم الـاول',
@@ -130,26 +125,16 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                                     title: 'استدعاء_قسم_الافلام #الافلام',
                                                     description: '',
                                                     id: '.م13'
-                                                },
-                                                {
-                                                    header: 'الــقـ👨🏻‍💻ـســم الــثــانــي عــشــر',
-                                                    title: 'سكربت_بوت_جاهز_للتعديل_👨🏻‍💻',
-                                                    description: '',
-                                                    id: '.م10'
                                                }
                                             ]
                                         }
                                     ]
                                 }),
                   messageParamsJson: ''
-                },
-                {
-              name: "quick_reply",
-              buttonParamsJson: '{"display_text":"⌈🚀╎الدردشه المجهوله╎🚀⌋","id":".chathom"}'
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـور╎📲⌋","url":"https://chat.whatsapp.com/JsaqRUnNyXb0EuYG1sAxd3","merchant_url":"https://chat.whatsapp.com/JsaqRUnNyXb0EuYG1sAxd3"}'
+               buttonParamsJson: '{"display_text":"⌈📲╎المطور╎📲⌋","url":"https://wa.me/+201289211701","merchant_url":"https://chat.whatsapp.com/JsaqRUnNyXb0EuYG1sAxd3"}'
                             }
                         ]
                     }
